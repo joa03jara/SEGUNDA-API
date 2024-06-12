@@ -1,0 +1,66 @@
+//User
+
+###//Crear Usuarios
+POST http://localhost:9000/api/user HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Richard Savino",
+    "edad": 22,
+    "fecha_de_nacimiento": "29/09/2001",
+    "sexo": "Hombre",
+    "email": "rich03savino@gmail.com"
+}
+
+###//Ver todos los Usuarios
+GET http://localhost:9000/api/user HTTP/1.1
+
+###//Ver un usuario Especifico por ID
+GET http://localhost:9000/api/user/662c99a2aa50025c77a46aa3 HTTP/1.1
+
+###//Actualizar un Usuario
+PUT http://localhost:9000/api/user/662c9a02aa50025c77a46aa7 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Richard Perez",
+    "edad": 19,
+    "fecha_de_nacimiento": "29/08/2001",
+    "sexo": "Gay",
+    "email": "rich03324345savino@gmail.com"
+}
+
+###//Borrar un Usuario
+DELETE http://localhost:9000/api/user/662c9a02aa50025c77a46aa7 HTTP/1.1
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Bienes
+
+###//Crear Usuarios
+POST http://localhost:9000/api/bienes HTTP/1.1
+Content-Type: application/json
+
+{
+    "domicilio": "Neuquen",
+    "estado_civil": "Asado"
+}
+
+###//Ver todos los Usuarios
+GET http://localhost:9000/api/bienes HTTP/1.1
+
+###//Ver un usuario Especifico por ID
+GET http://localhost:9000/api/bienes/662c94744f5061e304c208c7 HTTP/1.1
+
+###//Actualizar un Usuario
+PUT http://localhost:9000/api/bienes/662c94744f5061e304c208c7 HTTP/1.1
+Content-Type: application/json
+
+{
+    "domicilio": "España",
+    "estado_civil": "1"
+}
+
+###//Borrar un Usuario
+DELETE http://localhost:9000/api/bienes/662c94744f5061e304c208c7 HTTP/1.1
